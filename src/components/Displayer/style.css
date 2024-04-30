@@ -1,0 +1,125 @@
+.display-wrapper-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0.5rem 0 0 0;
+}
+
+.display-wrapper-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.display-wrapper-main>* {
+  width: 8rem;
+  height: 2rem;
+  border-radius: 15px;
+  margin: 0.3rem;
+  display: flex;
+  font-size: smaller;
+  justify-content: space-around;
+  padding: 0 0.4rem 0 0.4rem;
+  align-items: center;
+  background: rgba(153, 157, 160, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.displayer-back {
+  width: 100%;
+}
+
+#remaining-time-header {
+  font-size: smaller;
+  text-align: center;
+}
+
+@media (min-width:201px) and (max-width:540px) {
+  .display-wrapper-container {
+    align-items: center;
+  }
+
+  .display-wrapper-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+  .display-wrapper-main>* {
+    display: flex;
+    flex-direction: column;
+    height: 5rem;
+    font-size: medium;
+
+  }
+
+  #remaining-time-header {
+    font-size: medium;
+  }
+}
+
+@media (min-width:541px) and (max-width:768px) {
+  .display-wrapper-container {
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+
+  }
+
+  .display-wrapper-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+  }
+
+  .display-wrapper-main>* {
+    display: flex;
+    flex-direction: column;
+    height: 5rem;
+    font-size: medium;
+
+  }
+
+  #remaining-time-header {
+    font-size: large;
+  }
+
+}
+
+@media (min-width:768px) {
+  .display-wrapper-container {
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+
+  }
+
+  .display-wrapper-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+
+  }
+
+  .display-wrapper-main>* {
+    display: flex;
+    flex-direction: column;
+    height: 7rem;
+    gap: 1rem;
+    font-size: larger;
+
+  }
+
+  #remaining-time-header {
+    font-size: x-large;
+  }
+
+}

@@ -1,0 +1,72 @@
+:root {
+  /* Global variables to be defined here */
+  --primary-background: #716DC3;
+  --scale: 1.25;
+  --base-size: 1rem;
+  --font-family: Poppins;
+  --h6: calc(var(--scale)*var(--base-size));
+  --h5: calc(var(--scale)*var(--h6));
+  --h4: calc(var(--scale)*var(--h5));
+  --h3: calc(var(--scale)*var(--h4));
+  --h2: calc(var(--scale)*var(--h3));
+  --h1: calc(var(--scale)*var(--h2))
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+
+  background-repeat: repeat-y;
+  font-family: var(--font-family);
+  width: 100%;
+
+}
